@@ -21,7 +21,7 @@ fun CalculatorKeypad(
     CalculatorButtonRow(
         buttons = listOf(
             CalculatorButtonUi(clearLabel, ButtonKind.Control, clearAction),
-            CalculatorButtonUi("⌫", ButtonKind.Control, CalculatorAction.Delete),
+            CalculatorButtonUi("+/-", ButtonKind.Control, CalculatorAction.ToggleSign),
             CalculatorButtonUi("%", ButtonKind.Control, CalculatorAction.Percent),
             CalculatorButtonUi("÷", ButtonKind.Operator, CalculatorAction.Operator("/"))
         ),
